@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Este es el código HTML para la barra de navegación del sitio web -->
+<!-- Se carga el archivo CSS para darle estilo a la barra de navegación -->
+<link href="./css/navBar.css" rel="stylesheet" />
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Aquí se muestra el logo de la empresa (50x50 píxeles) -->
+    <img src="./img/logo/logo.png" alt="Logo" width="50" height="50" />
+
+    <!-- Nombre de la tienda que lleva a la página principal (index.html) -->
+    <a class="navbar-brand" href="./index.html">PcCom</a>
+
+    <!-- Botón que aparece en móviles para abrir/cerrar el menú de navegación -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Icono de "hamburguesa" para el menú en móvil -->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Aquí van los enlaces del menú, se colapsan en pantallas pequeñas -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Enlace para ir a la página de productos -->
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Productos</a>
+        </li>
+        <!-- Enlace para ir a la página de contacto -->
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+        <!-- Enlace para ir a la página de la cesta (carrito de compras) -->
+        <li class="nav-item">
+          <a class="nav-link" href="./cesta.html">Cesta</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

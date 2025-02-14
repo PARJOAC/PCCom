@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Configuración básica de la página -->
+  <meta charset="UTF-8" /> <!-- Permite usar caracteres especiales como tildes y ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hace que la web se vea bien en móviles -->
+
+  <title>Contacto | PcCom</title> <!-- Título que aparece en la pestaña del navegador -->
+
+  <!-- Importamos Bootstrap para usar estilos y diseño responsive sin mucho esfuerzo -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Icono que aparece en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="./img/logo/logo.png">
+
+  <!-- Scripts para la navegación y el footer (probablemente generan estos elementos dinámicamente) -->
+  <script src="./js/scriptNav.js"></script>
+  <script src="./js/scriptFooter.js"></script>
+
+  <!-- Hoja de estilos personalizada (aunque aquí falta el atributo "rel", lo correcto sería rel="stylesheet") -->
+  <link href="./css/general.css" />
+</head>
+
+<body>
+  <!-- Barra de navegación (se genera con el script) -->
+  <div id="navBar"></div>
+
+  <!-- Sección de Contacto -->
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Formulario de contacto -->
+      <div class="col-lg-6">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form id="formularioContacto">
+          <div class="row mb-3">
+            <!-- Campo para el nombre completo -->
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre completo" required />
+            </div>
+            <!-- Campo para el teléfono -->
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Número de Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu número de teléfono" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <!-- Campo para el correo electrónico -->
+            <div class="col-md-6">
+              <label for="correo" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Introduce tu correo electrónico"
+                required />
+            </div>
+            <!-- Campo para el asunto del mensaje -->
+            <div class="col-md-6">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" placeholder="Introduce el asunto" required />
+            </div>
+          </div>
+          <!-- Campo para el mensaje -->
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-warning w-100">
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Mapa de ubicación (Google Maps) -->
+      <div class="col-lg-6">
+        <h2 class="text-center mb-4">Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d669.6933054509964!2d-4.555634795142582!3d37.018952142089006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd728fe7145f4401%3A0x25eb3e2b66c2e0b1!2sIES%20Pedro%20Espinosa!5e0!3m2!1ses!2ses!4v1738686309197!5m2!1ses!2ses"
+          width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página (se genera con el script) -->
+  <div id="footer"></div>
+
+  <!-- Script para manejar el formulario de contacto -->
+  <script src="./scripts/formulario.js"></script>
+
+  <!-- Script de Bootstrap para los componentes interactivos -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #ff6600;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}

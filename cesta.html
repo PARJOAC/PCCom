@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Configuración básica de la página -->
+  <meta charset="UTF-8" /> <!-- Codificación de caracteres para que se muestren bien los caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Hace la web responsive en dispositivos móviles -->
+
+  <title>Cesta | PcCom</title> <!-- Título que aparecerá en la pestaña del navegador -->
+
+  <!-- Se importa Bootstrap para usar sus clases de estilo y componentes predefinidos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Icono que aparece en la pestaña del navegador -->
+  <link rel="icon" type="image/png" href="./img/logo/logo.png">
+
+  <!-- Scripts para la barra de navegación y pie de página (se generan dinámicamente) -->
+  <script src="./js/scriptNav.js"></script>
+  <script src="./js/scriptFooter.js"></script>
+
+  <!-- Hoja de estilos personalizada -->
+  <link href="./css/general.css" rel="stylesheet" /> <!-- Estilos generales de la web -->
+  <link href="./css/cesta.css" rel="stylesheet" /> <!-- Estilos específicos para la página de la cesta -->
+</head>
+
+<body>
+  <!-- Barra de navegación (se genera con el script) -->
+  <div id="navBar"></div>
+
+  <!-- Sección de la Cesta de Compra -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Tu Cesta</h2>
+
+    <!-- Aquí se generarán los productos que el usuario ha añadido a la cesta -->
+    <div id="carrito-items"></div>
+
+    <!-- Fila con el total de la cesta y el botón de realizar el pedido -->
+    <div class="row mt-4">
+      <div class="col-12 text-end">
+        <!-- Mostramos el total de la cesta -->
+        <p class="total">Total: <span id="precio-total">0.00€</span></p>
+        <!-- Botón para realizar el pedido -->
+        <button class="btn btn-checkout">Realizar Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página (se genera con el script) -->
+  <div id="footer"></div>
+
+  <!-- Script que maneja la lógica de la cesta de compras -->
+  <script src="./scripts/cesta.js"></script>
+
+  <!-- Script de Bootstrap para componentes interactivos -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
