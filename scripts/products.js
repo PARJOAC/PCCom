@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="price">${descuento}</div>
                 <div class="stars">${producto.calificacion}${estrellas}</div>
               </div>
-              <a href="./cesta.html" class="btn btn-primary">Comprar</a>
+              <a href="../cesta.html" class="btn btn-primary">Comprar</a>
             </div>
           </div>
         </div>
